@@ -11,7 +11,7 @@ const TR = styled.tr`
 
 export default function Books({ book }) {
   return (
-    <TR key={book.id}>
+    <TR>
       <td>{book.id}</td>
       <td>{book.title}</td>
       <td>{book.category}</td>
