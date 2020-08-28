@@ -8,7 +8,7 @@ const INPUT = styled.input`
 
 const SELECT = styled.select`
   padding: 5px;
-  background: brown;
+  background: blue;
   color:white;
   margin-right: 2%;
 `;

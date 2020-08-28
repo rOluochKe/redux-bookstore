@@ -26,6 +26,7 @@ const BooksList = props => {
     </TABLE>
   );
 };
+
 BooksList.propTypes = {
   state: PropTypes.instanceOf(Array).isRequired,
 };

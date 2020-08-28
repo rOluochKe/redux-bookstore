@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const TR = styled.tr`
-  background: Brown;
+  background: blue;
   color: white;
   text-align: center;
   width: 100%;
