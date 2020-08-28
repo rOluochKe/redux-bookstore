@@ -14,7 +14,7 @@ const BooksList = ({ state, removeBook }) => (
       </tr>
     </thead>
     <tbody>
-      {state.map(book => <Book key={Math.random() * 1000} book={book} removeBook={removeBook} />)}
+      {state.map(book => <Book key={Math.random() * 1000} book={book} removeBook={handleRemoveBook} />)}
     </tbody>
   </table>
 );
