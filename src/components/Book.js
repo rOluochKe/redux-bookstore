@@ -8,7 +8,7 @@ export default function Books({ book, handleRemoveBook }) {
       <td className="trow">{book.title}</td>
       <td className="trow">{book.category}</td>
       <td className="trow">
-        <button className="btn3" type="submit" onClick={handleRemoveBook}>
+        <button className="btn3" type="submit" onClick={() => handleRemoveBook(book)}>
           Remove Book
         </button>
       </td>

@@ -19,7 +19,6 @@ const BooksList = ({ book, handleRemoveBook }) => (
     </tbody>
   </table>
 );
-
 BooksList.propTypes = {
   book: PropTypes.instanceOf(Array).isRequired,
   handleRemoveBook: PropTypes.func.isRequired,
