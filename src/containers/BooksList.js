@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { removeBook } from '../actions/index';
+import { handleRemoveBook } from '../actions/index';
 
-const BooksList = ({ state, removeBook }) => (
+const BooksList = ({ book, handleRemoveBook }) => (
   <table className="table-one">
     <thead>
       <tr>
@@ -14,21 +15,21 @@ const BooksList = ({ state, removeBook }) => (
       </tr>
     </thead>
     <tbody>
-      {state.map(book => <Book key={Math.random() * 1000} book={book} removeBook={removeBook} />)}
+      {book.map(book => <Book key={Math.random() * 1000} book={book} handleRemoveBook={handleRemoveBook} />)}
     </tbody>
   </table>
 );
 
 BooksList.propTypes = {
-  state: PropTypes.instanceOf(Array).isRequired,
-  removeBook: PropTypes.func.isRequired,
+  book: PropTypes.instanceOf(Array).isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({ state });
+const mapStateToProps = book => ({ book });
 
 const mapDispatchToProps = dispatch => ({
-  removeBook: book => {
-    dispatch(removeBook(book));
+  handleRemoveBook: book => {
+    dispatch(handleRemoveBook(book));
   },
 });
 
