@@ -6,11 +6,11 @@ const createBook = book => ({
   book,
 });
 
-const removeBook = book => ({
+const handleRemoveBook = book => ({
   type: REMOVE_BOOK,
   book,
 });
 
 export {
-  CREATE_BOOK, REMOVE_BOOK, createBook, removeBook,
+  CREATE_BOOK, REMOVE_BOOK, createBook, handleRemoveBook,
 };
