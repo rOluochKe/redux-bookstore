@@ -17,7 +17,7 @@ Magic-books Inc. is a fictional company based in Germany. They have requested yo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [DEMO LINK](https://cryptic-gorge-45167.herokuapp.com/)
+## [Demo Link](https://cryptic-gorge-45167.herokuapp.com/)
 
 ## Available Scripts
 
