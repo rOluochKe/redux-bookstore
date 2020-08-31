@@ -11,6 +11,11 @@ const handleRemoveBook = book => ({
   book,
 });
 
+const CHANGE_FILTER = book => ({
+  type: 'CHANGE_FILTER',
+  book,
+});
+
 export {
-  CREATE_BOOK, REMOVE_BOOK, createBook, handleRemoveBook,
+  CREATE_BOOK, REMOVE_BOOK, CHANGE_FILTER, createBook, handleRemoveBook,
 };
